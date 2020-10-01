@@ -1,0 +1,7 @@
+psmodule_admin_sample_route:
+  path: /addons/modules/psmodule
+  methods: [GET]
+  defaults:
+    _controller: 'sergiosgc\psmodule\AdminController::adminSampleRoute'
+    _legacy_controller: 'PSModule'
+    _legacy_link: 'PSModule'

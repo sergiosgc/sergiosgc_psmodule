@@ -1,0 +1,13 @@
+{
+    "name": "sergiosgc/psmodule",
+    "description": "Skeleton module for Prestashop",
+    "autoload": {
+      "psr-4": {
+        "sergiosgc\\psmodule\\": ["src", "controllers/front", "controllers/admin" ]
+      }
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }
