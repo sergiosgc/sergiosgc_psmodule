@@ -88,7 +88,7 @@ class Sergiosgc_PSModule extends Module {
         /**
          * If values have been submitted in the form, process.
          */
-        if (((bool)Tools::isSubmit('submitPsmoduleModule')) == true) {
+        if (((bool)Tools::isSubmit('submitPSModuleModule')) == true) {
             $this->postProcess();
         }
         
@@ -101,7 +101,7 @@ class Sergiosgc_PSModule extends Module {
         $helper->allow_employee_form_lang = \Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 0);
 
         $helper->identifier = $this->identifier;
-        $helper->submit_action = 'submitPsmoduleModule';
+        $helper->submit_action = 'submitPSModuleModule';
         $helper->currentIndex = \Context::getContext()->link->getAdminLink('AdminModules', false)
             .'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
